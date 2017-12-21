@@ -16,7 +16,7 @@ RUN pip install --upgrade pip
 
 RUN pip install --pre --upgrade suricata-update && suricata-update
 
-ADD ./suricata/suricata.yaml /etc/suricata/
+ADD suricata.yaml /etc/suricata/
 
 VOLUME /var/log/suricata
 
